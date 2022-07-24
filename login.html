@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5357fb3dfe.js" crossorigin="anonymous"></script>
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div id="green-section"></div>
+    <div class="login-container">
+        <h1 class="login-header">LOGIN</h1>
+        <div class="icons">
+            <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="google.com"><i class="fa-brands fa-google"></i></a>
+            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p class="after-icons">Or login using Email</p>
+        <input type="email" name="Email" id="recieve-email" placeholder="EMAIL">
+        <input type="password" name="password" id="recieve-password" placeholder="PASSWORD" minlength="4" maxlength="8" required>
+        <div class="remember-password-and-forgot-password">
+            <span class="remember-password"><input type="checkbox" name="" id="checkbox-remember-acc"> Remember Password</span>
+            <a href=" " id="forgotten-password">Forgot password?</a>
+        </div>
+        <button  id="login-login-button"  value="Login" onclick="btnRecieveInput()">log in</button>
+        <p class="signup-login">Don't have an account? <span class="para-after-signup-login"><a href="index.html">signup</a></span></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

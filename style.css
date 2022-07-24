@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#index {
+    background: url(imgbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    color: gold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+    font-size: 30px;
+    text-shadow: 2px 2px white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.Desktop a {
+    display: block;
+    font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+    padding:10px ;
+}
+
+.Desktop a:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: wheat;
+    color: black;
+    transition: ease-in 0.5s;
+}
+
+.Desktop {
+    border: 3px solid gold;
+    border-radius: 10px;
+}
+
+#mobile-Menu {
+    display: none;
+    border: 3px solid gold;
+    border-radius: 10px;
+}
+.fa-solid{
+    border: none;
+}
+.mobile-navbar {
+    display: none;
+}
+
+.container {
+    background-color: gold;
+    border-radius: 6px;
+    width: 80%;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 3px 3px 3px 3px rgba(113, 113, 113, 0.5);
+}
+
+#header {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#intro-paragraph {
+    font-size: 20px;
+}
+
+.img-and-content {
+    display: flex;
+    gap: 10px;
+}
+
+#intro-img {
+    max-width: 40%;
+    height: auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.container2 {
+    background-color: gold;
+    width: 80%;
+    border-radius: 15px;
+    margin: 30px auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px 3px rgba(113, 113, 113, 0.5);
+    padding: 10px;
+    gap: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#second-intro-img {
+    max-width: 40%;
+    height: auto;
+}
+
+.container2 h2 {
+    text-align: center;
+}
+
+.container2 p {
+    text-align: center;
+    font-size: larger;
+}
+
+#menu-btn {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .Desktop {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: none;
+        position: static;
+        z-index: 1;
+    }
+    .logo {
+        color: gold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 200;
+        font-size: 15px;
+        text-shadow: 0.5px 0.5px white;
+    }
+
+    .mobile-navbar ul {
+        display: block;
+        background-color: black;
+        z-index: 1;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .mobile-navbar ul li::after {
+        display: block;
+        width: 100%;
+        content: ' ';
+        border-bottom: 2px solid white;
+    }
+
+    #mobile-Menu {
+        display: initial;
+        font-size: larger;
+        padding: 10px;
+        padding: 10px;
+        display: block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: l300;
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobile-navbar-ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .ul-li-nav{
+        display: flex;
+    }
+
+    #mobile-Menu:hover {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: wheat;
+        color: black;
+        transition: ease-in 0.5s;
+    }
+
+    .container {
+        position: relative;
+        background-color: gold;
+        border-radius: 6px;
+        width: 90%;
+        margin: 20px auto;
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        box-shadow: 3px 3px 3px 3px rgba(98, 97, 97, 0.5);
+    }
+
+    #header {
+        font-size: 33px;
+        text-align: center;
+    }
+
+    #intro-paragraph {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mini-paragraph {
+        font-size: 60%;
+    }
+
+    .img-and-content {
+        display: block;
+    }
+
+    .container2 {
+        display: block;
+    }
+
+    #intro-img {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    #second-intro-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* MARKET PLACE */
+#marketplace {
+    background-color: grey;
+}
+
+#marketplace-nav {
+    background-color: black;
+}
+
+#marketplace ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#marketplace ul li {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+#marketplace-search-input {
+    padding: 10px;
+}
+
+#marketplace-search-input-button {
+    padding: 10PX;
+}
+.fa-solid{
+    color: white;
+}
+.father-container{
+    background-color: rgba(12, 12, 12, 0.758);
+}
+#to-cart{
+    padding: 10px;
+}
+#to-cart-item{
+    color: black;
+}
+.intro-for-display{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    background-color: rgba(133, 131, 131, 0.348);
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.content-for-first-column-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    padding: 0.5rem;
+    grid-gap: 1rem;
+    color: white;
+}
+.market-cards {
+    background-color: rgba(0, 0, 0, 0.333);
+    margin-bottom: 80px;
+    margin-top: 70px;
+    border-radius: 17px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.576);
+}
+.market-cards h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: small;
+    margin-top: 4px;
+}
+.market-cards p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+}
+.market-card-img {
+    height: auto;
+    max-width: 100%;
+}
+.add-to-list{
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.add-to-list{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.cart-market-checkout{
+    width: 100%;
+    min-height: 30px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.cart-market-checkout H1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.checkout-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 0.5rem;
+    grid-gap: 1rem;
+    color:  black;
+    text-transform: uppercase;
+}
+.checkout-card-flex{
+    gap: 5px;
+    padding: 10px;
+    background-color: rgba(255, 166, 0, 0.435);
+    border-radius: 14px;
+    box-shadow:1px 1px 1px 1px rgba(98, 97, 97, 0.5) ;
+    justify-content: space-around;
+    display: block;
+}
+.checkout-card-flex{
+    font-size: 100%;
+    text-align: center;
+}
+.cart-market-checkout-column img{
+    height: auto;
+    max-width: 30%;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cart-market-checkout-column-mini{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.cart-market-checkout-column-mini button{
+    width: 15px;
+    background-color: orange;
+    border: none;
+    font-size: 15px;
+    box-shadow:1px 1px 1px 1px rgba(98, 97, 97, 0.5) ;
+}
+.cart-market-checkout-column-mini button:hover{
+    background-color: rgba(177, 177, 253, 0.311);
+}
+.last-btn{
+    width: 100%;
+    background-color: red;
+    margin-top: 8px;
+    text-transform: uppercase;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+.finalCheckout{
+    display: flex;
+}
+.subtotal{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(252, 215, 215, 0.73);
+    border: 3px solid black;
+    text-align: center;
+    box-shadow:1px 1px 1px 1px rgba(98, 97, 97, 0.5) ;
+    cursor: pointer;
+}
+.payment{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(0, 38, 255, 0.561);
+    text-transform: uppercase;
+}
+.payment:hover{
+    background-color: black;
+    color: wheat;
+    transition: ease 0.5s;
+}
+@media screen and (max-width: 600px){
+    #marketplace ul li {
+        margin-top: 0;
+        padding-bottom: 5px;
+    }
+
+    #marketplace-search-input {
+        padding: 5px;
+        display: none;
+    }
+    .intro-for-display{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        background-color: rgba(133, 131, 131, 0.348);
+        width: 80%;
+        margin: auto;
+        color: white;
+        font-size: 20px;
+    }
+    #marketplace-search-input-button {
+        padding: 5PX;
+    }
+    .content-for-first-column-menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        padding: 0.5rem;
+        grid-gap: 1rem;
+        color: white;
+    }
+    .marketplace-li{
+        display: none;
+    }
+    .market-cards {
+        background-color: rgba(0, 0, 0, 0.424);
+        margin-bottom: 4px;
+        margin-top: 4px;
+        border-radius: 17px;
+    }
+    .add-to-list{
+        display: block;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 10px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+    }
+    .cart-market-checkout-column img{
+        height: auto;
+        max-width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 380px){
+    .finalCheckout{
+        display: block;
+    }
+    .subtotal{
+        display: block;
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+        background-color: rgba(252, 215, 215, 0.73);
+        border: 3px solid black;
+        text-align: center;
+    }
+    .payment{
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 38, 255, 0.561);
+        text-transform: uppercase;
+    }
+    .intro-for-display{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        background-color: rgba(133, 131, 131, 0.348);
+        width: 80%;
+        margin: auto;
+        color: white;
+        font-size: 13px;
+    }
+}
+/*LOGIN PAGE */
+#green-section{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 255, 255);
+}
+.login-container{
+    display: block;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(164, 163, 163, 0.554);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.69);
+    transform: translateY(-80px);
+}
+.login-header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 46, 24, 0.845);
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    gap: 10px;
+}
+.after-icons{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.login-container input[type=email], input[type=password]{
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    margin-top: 3px;
+}
+#login-login-button{
+    display: block;
+}
+.remember-password-and-forgot-password{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+#forgotten-password{
+    text-decoration: none;
+    margin-left: 25%;
+}
+#login-login-button{
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: aqua;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.signup-login{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+.signup-login a{
+    text-decoration: none;
+    color: blue;
+}
+@media screen and (max-width: 600px){
+    .remember-password-and-forgot-password{
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 0;
+        font-size: 13px;
+    }
+    #forgotten-password{
+        text-decoration: none;
+        margin-left: 10px;
+    } 
+}
+@media screen and (max-width: 250px){
+    .remember-password-and-forgot-password{
+        width: 80%;
+        display: block;
+    }
+    #forgotten-password{
+        display: block;
+    } 
+    .remember-password{
+        display: block;
+        margin: auto;
+    }
+}
+.fa-solid fa-cart-shopping{
+    background-color: white;
+    width: 40px;
+}
