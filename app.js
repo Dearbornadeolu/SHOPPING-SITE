@@ -2,6 +2,12 @@ const productEl = document.querySelector('.content-for-first-column-menu')
 const cartItemEl = document.querySelector('.checkout-cards')
 const outputSubtotal = document.querySelector('.subtotal')
 const marketBtn = document.querySelector('#to-cart-items')
+if ((localStorage.getItem("userFname") === null) || (localStorage.getItem("userLname") === null)) {
+    alert('pls sign up or login')
+    document.location.href = 'login.html'
+}else{
+    document.querySelector('#UserOutput').textContent = `hi,  ${localStorage.getItem("userFname")}  ${localStorage.getItem("userLname")}`
+}
 function renderProducts() {
     product.forEach((product) => {
         productEl.innerHTML += `

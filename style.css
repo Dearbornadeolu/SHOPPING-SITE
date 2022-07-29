@@ -615,3 +615,156 @@ footer {
     background-color: white;
     width: 40px;
 }
+/*signup page*/
+#signup{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+}
+.header{
+    background-color: white;
+    background-image: url(img4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: floralwhite;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100vh;
+}
+#signupForm{
+    background-color: black;
+    padding-top: 40px;
+}
+#signupForm > #FirstName, #LastName, #email, #tel, #conPassword, #password{
+    display: block;
+    margin: auto;
+    border: none;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(51, 53, 53);
+    color: white;
+    font-size: 15px;
+    padding-left: 3px;
+    box-shadow:1px 1px 1px 1px rgba(247, 247, 247, 0.39) ;
+}
+#signupForm > #submit{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: rgba(100, 148, 237, 0.498);
+    border: none;
+    border-radius: 10px;
+    box-shadow:1px 1px 1px 1px rgba(98, 97, 97, 0.5) ;
+}
+#header-backbtn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: red;
+}
+.displayMessage{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-left: 10px;
+    color: gold;
+    background-color: rgba(173, 173, 173, 0.479);
+    width: max-content;
+    margin-top: 150px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+#signupForm > #submit:hover{
+    background-color: inherit;
+    color: white;
+    border: 3px solid white;
+    transition: 0.2s;
+}
+#footer-signup{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+@media screen and (max-width: 700px){
+    #signup{
+        display: block;
+    }
+    .signup-page{
+        background-color: black;
+    }
+    .header{
+        background-color: white;
+        background-image: url(img4.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: floralwhite;
+        height: 200px;
+    }
+    
+    #header-backbtn{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: medium;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .displayMessage{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 35px;
+        text-transform: uppercase;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        color: white;
+        background-color: transparent;
+        width: auto;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    
+    #signupForm{
+        background-color: black;
+        padding-top: 20px;
+        height: auto;
+    }
+    
+    #signupForm > #FirstName, #LastName, #email, #tel, #conPassword, #password{
+        display: block;
+        margin: auto;
+        border: none;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 40px;
+        background-color: rgb(51, 53, 53);
+        color: white;
+        font-size: 15px;
+        padding-left: 3px;
+        box-shadow:1px 1px 1px 1px rgba(247, 247, 247, 0.39) ;
+    }
+    #signupForm > #submit{
+        display: block;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        text-transform: uppercase;
+        background-color: rgba(100, 148, 237, 0.498);
+        border: none;
+        border-radius: 10px;
+        box-shadow:1px 1px 1px 1px rgba(98, 97, 97, 0.5) ;
+    }
+    #signupForm > #submit:hover{
+        background-color: inherit;
+        color: white;
+        border: 3px solid white;
+        transition: 0.2s;
+    }
+}
